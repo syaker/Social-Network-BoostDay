@@ -4,7 +4,8 @@
   "description": "Red social para compartir tips, métodos y rutinas de organización para aumentar la productividad",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose -coverage"
+	"test": "jest --verbose -coverage",
+	"build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
     "sass": "^1.26.7"
   },
   "devDependencies": {
-    "eslint": "^7.1.0"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1"
   }
 }
