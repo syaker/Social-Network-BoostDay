@@ -5,7 +5,7 @@ export default () => {
   const viewHome = `
 	${header}
   <section class="home">
-    <img class="logo_boost"></img>
+    <img class="logo_boost" src="../all_images/Logo.png"></img>
     <div class="buttons">
       <button class="enter"><a href="#/login">INICIAR SESIÓN</a></button>
       <button class="register"><a href="#/signup">REGISTRARSE</a></button>
