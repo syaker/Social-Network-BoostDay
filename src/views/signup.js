@@ -1,6 +1,6 @@
 export default () => {
   const viewSignUp = `<section class='SignUp'>
-		<img class="imgSignUp"></img>
+		<img class="imgSignUp" src="../all_images/SignUp.png"></img>
 		<div class="entries">
 		  <input class="name"></input>
 		  <input class="email"></input>
@@ -9,8 +9,8 @@ export default () => {
 		</div>
 		<button>Registrarse</button>
 		<p>O registrate con...</p>
-		<img class="iconFace"></img>
-		<img class="iconGoogle"></img>
+		<img class="iconFace" src="../all_images/facebook.png"></img>
+		<img class="iconGoogle" src="../all_images/iconogoogle.png"></img>
 	  </section>`;
   const divHTML = document.createElement("div");
   divHTML.innerHTML = viewSignUp;

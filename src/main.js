@@ -1,6 +1,8 @@
-const init = () => {
+import { changeView } from './controller/controler_views.js'
 
-	window.addEventListener('hashchange', () => console.log(window.location.hash))
+const init = () => {
+	changeView(window.location.hash)
+	window.addEventListener('hashchange', () => changeView(window.location.hash));
 
 }
 

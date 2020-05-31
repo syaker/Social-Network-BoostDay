@@ -7,8 +7,8 @@ export default () => {
   <section class="home">
     <img class="logo_boost"></img>
     <div class="buttons">
-      <button class="enter">INICIAR SESIÓN</button>
-      <button class="register">REGISTRARSE</button>
+      <button class="enter"><a href="#/login">INICIAR SESIÓN</a></button>
+      <button class="register"><a href="#/signup">REGISTRARSE</a></button>
       <p>Ó</p>
     </div>
     <p>

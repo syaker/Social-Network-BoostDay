@@ -2,11 +2,12 @@
   "name": "social-network-boostday",
   "version": "1.0.0",
   "description": "Red social para compartir tips, métodos y rutinas de organización para aumentar la productividad",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-	"test": "jest --verbose -coverage",
-	"build": "babel src -d lib",
-	"enter": "sass --watch style.scss style.css"
+    "test": "jest --verbose -coverage",
+    "build": "babel src -d lib",
+    "enter": "sass --watch style.scss style.css",
+    "start": "serve src/"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
   "homepage": "https://github.com/syaker/Social-Network-BoostDay#readme",
   "dependencies": {
     "babel": "^6.23.0",
-    "sass": "^1.26.7"
+    "sass": "^1.26.7",
+    "serve": "^11.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
