@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
 	"test": "jest --verbose -coverage",
-	"build": "babel src -d lib"
+	"build": "babel src -d lib",
+	"enter": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
