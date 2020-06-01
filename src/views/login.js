@@ -3,13 +3,15 @@ export default () => {
     <section class="LogIn">
       <img class="imgLogin" src="../all_images/Login.png"></img>
       <div class="entries">
-        <input class="email"></input>
-        <input class="pass"></input>
+        <input type="text" class="email" placeholder="Email"></input>
+        <input type="password" class="pass" placeholder="Password"></input>
       </div>
       <button>Ingresar</button>
-      <p>O ingresa con...</p>
+	  <p>O ingresa con...</p>
+	  <div class="icons">
 	  <img class="iconFace" src="../all_images/facebook.png"></img>
 	  <img class="iconGoogle" src="../all_images/iconogoogle.png"></img>
+	  </div>
 	</section>`;
 	const divHTML = document.createElement('div');
 	divHTML.innerHTML = viewLogin;

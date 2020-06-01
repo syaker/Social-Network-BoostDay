@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --verbose -coverage",
     "build": "babel src -d lib",
-    "enter": "sass --watch style.scss style.css",
+    "enter": "sass --watch src/styles/style.scss src/styles/style.css",
     "start": "serve src/"
   },
   "repository": {

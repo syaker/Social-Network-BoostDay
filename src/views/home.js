@@ -12,8 +12,7 @@ export default () => {
       <p>Ó</p>
     </div>
     <p>
-      Comparte tips, rutinas, métodos y todo lo que hagas para organizarte dia a
-      dia.
+	  Comparte tips, rutinas, métodos <br> y todo lo que hagas para organizarte dia a dia.
     </p>
   </section>`;
   const divHTML = document.createElement("div");
