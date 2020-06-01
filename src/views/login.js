@@ -6,7 +6,7 @@ export default () => {
         <input type="text" class="email" placeholder="Email"></input>
         <input type="password" class="pass" placeholder="Password"></input>
       </div>
-      <button>Ingresar</button>
+      <button type="submit">Ingresar</button>
 	  <p>O ingresa con...</p>
 	  <div class="icons">
 	  <img class="iconFace" src="../all_images/facebook.png"></img>

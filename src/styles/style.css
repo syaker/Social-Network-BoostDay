@@ -104,11 +104,12 @@ body::before {
   width: 64rem;
   border: 0px;
   border-bottom: 3px solid #aaaaaa;
-  padding: 16% 0% 0%;
+  padding: 16% 1% 0%;
   height: 9rem;
   font-family: Poppins;
   font-weight: 300;
   font-size: 4rem;
+  outline: none;
 }
 
 #all_content div .LogIn button {
@@ -120,8 +121,13 @@ body::before {
   color: white;
   background-color: #58b697;
   border: 0px;
+  outline: none;
 }
 
+#all_content {
+  position: fixed;
+  width: 100%;
+}
 #all_content div .LogIn {
   display: flex;
   flex-direction: column;
@@ -170,6 +176,80 @@ body::before {
   font-weight: 400;
   color: #606060;
   margin: 2rem 0px 0rem;
+}
+
+#all_content div .SignUp .entries input {
+  width: 64rem;
+  border: 0px;
+  border-bottom: 3px solid #aaaaaa;
+  padding: 9% 1% 0%;
+  height: 9rem;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 4rem;
+  outline: none;
+}
+
+#all_content div .SignUp button {
+  padding: 3% 12%;
+  margin: 5rem auto 4rem;
+  font-family: Poppins;
+  font-size: 3.5rem;
+  border-radius: 16rem;
+  color: white;
+  background-color: #58b697;
+  border: 0px;
+  outline: none;
+}
+
+#all_content div .SignUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+#all_content div .SignUp .imgSignUp {
+  margin: 0px auto;
+  padding: 15% 0% 4%;
+  width: 37rem;
+  height: 26rem;
+}
+#all_content div .SignUp .entries {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+  margin-bottom: 3rem;
+}
+#all_content div .SignUp .icons {
+  display: flex;
+  padding: 1% 0% 63%;
+  justify-content: center;
+}
+#all_content div .SignUp .icons .iconFace {
+  width: 16rem;
+  height: 16rem;
+  border: 0px;
+  border-radius: 18rem;
+  margin: 3% 8%;
+  box-shadow: 2px 13px 32px rgba(0, 0, 0, 0.35);
+}
+#all_content div .SignUp .icons .iconGoogle {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 13rem;
+  margin: 3% 8%;
+  box-shadow: 2px 13px 32px rgba(0, 0, 0, 0.35);
+}
+#all_content div .SignUp p {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #606060;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

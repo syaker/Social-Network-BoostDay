@@ -2,11 +2,12 @@
   width: 64rem;
   border: 0px;
   border-bottom: 3px solid #aaaaaa;
-  padding: 16% 0% 0%;
+  padding: 16% 1% 0%;
   height: 9rem;
   font-family: Poppins;
   font-weight: 300;
   font-size: 4rem;
+  outline: none;
 }
 %style_button {
   padding: 3% 12%;
@@ -17,8 +18,11 @@
   color: white;
   background-color: #58b697;
   border: 0px;
+  outline: none;
 }
 #all_content {
+	position: fixed;
+    width: 100%;
   div {
     .LogIn {
       display: flex;
