@@ -10,8 +10,10 @@ const changeView = (path) => {
 		case '#/profile': { return container.appendChild(objViews.Profile()) }
 		case '#/publications': { return container.appendChild(objViews.Publications()) }
 		case '#/signup': { return container.appendChild(objViews.SignUp()) }
-	
+		case '#/404': { return container.appendChild(objViews.NotFound()) }
+
 		default:
+			return container.appendChild(objViews.NotFound());
 			break;
 	}
 }

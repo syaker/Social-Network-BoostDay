@@ -4,10 +4,10 @@ export default () => {
 		<div class="entries">
 		  <input class="name" placeholder="Nombre"></input>
 		  <input class="email" placeholder="Email"></input>
-		  <input class="pass" placeholder="Contraseña"></input>
-		  <input class="repeatPass" placeholder="Repetir contraseña"></input>
+		  <input type="password" class="pass" placeholder="Contraseña"></input>
+		  <input type="password" class="repeatPass" placeholder="Repetir contraseña"></input>
 		</div>
-		<button>Registrarse</button>
+		<button class="register" type="submit">Registrarse</button>
 		<p>O registrate con...</p>
 		<div class="icons">
 		<img class="iconFace" src="../all_images/facebook.png"></img>
