@@ -15,6 +15,7 @@ export default () => {
 		</div>
 	  </section>`;
   const divHTML = document.createElement("div");
+  divHTML.setAttribute("id", "div-signup")
   divHTML.innerHTML = viewSignUp;
   return divHTML;
 };

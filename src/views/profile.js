@@ -24,6 +24,7 @@ export default () => {
   </section>`;
 
   const divHTML = document.createElement("div");
-  divHTML.innerHTML = viewLogin;
+  divHTML.setAttribute("id", "div-profile");
+  divHTML.innerHTML = viewProfile;
   return divHTML;
 };

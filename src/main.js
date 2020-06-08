@@ -1,4 +1,4 @@
-import { changeView } from './controller/controler_views.js'
+import { changeView } from './controller/controller_views.js'
 
 const init = () => {
 	changeView(window.location.hash)

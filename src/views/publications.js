@@ -31,6 +31,7 @@ export default () => {
 	  </div>
 	  </section>`;
   const divHTML = document.createElement("div");
+  divHTML.setAttribute("id", "div-publications")
   divHTML.innerHTML = viewPublications;
   return divHTML;
 };

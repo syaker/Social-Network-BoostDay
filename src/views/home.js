@@ -16,6 +16,7 @@ export default () => {
     </p>
   </section>`;
   const divHTML = document.createElement("div");
+  divHTML.setAttribute("id", "div-home");
   divHTML.innerHTML = viewHome;
   return divHTML;
 };
