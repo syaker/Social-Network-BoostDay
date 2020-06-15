@@ -1,7 +1,9 @@
-import { objViews } from "./obj_views.js";
+import { objViews } from "../views/obj_views.js";
+import { changeProfile } from "../model/profile.model.js";
 
 export default () => {
 	const viewProfile = objViews.Profile();
-	//Aqui falta darle estilos CSS y darle funcionalidad a los botones
+	const name = viewProfile.querySelector('.name');
+	const password = viewProfile.querySelector('.password');
 	return viewProfile;
 }

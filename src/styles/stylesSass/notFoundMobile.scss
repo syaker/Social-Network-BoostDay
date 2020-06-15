@@ -1,0 +1,36 @@
+#div-404 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  .content404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img404 {
+      width: 90%;
+      margin-top: 39rem;
+    }
+    .txtups {
+      font-size: 3.5rem;
+	  text-align: center;
+	  font-weight: 500;
+      font-family: Poppins, Arial;
+    }
+    .back-publications {
+      width: 40%;
+      height: 12rem;
+      border-radius: 4rem;
+      font-size: 3.3rem;
+      font-family: Poppins, Arial;
+      background-color: #1a936f;
+      color: white;
+      font-weight: 400;
+      letter-spacing: 1px;
+      border: 0px;
+      margin-top: 8rem;
+    }
+  }
+}

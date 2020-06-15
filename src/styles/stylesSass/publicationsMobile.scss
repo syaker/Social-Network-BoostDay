@@ -1,0 +1,270 @@
+#div-publications {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  .header-posts {
+    width: 100%;
+    height: 8.5%;
+    position: fixed;
+    top: 0;
+    background-color: #137054;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    .logout-icon {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logout-white {
+        width: 7.8%;
+        height: 42%;
+        margin: 0rem 0rem 0rem 5rem;
+      }
+    }
+    .lista-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8.2%;
+      height: 52%;
+      margin: 3rem 5rem 0rem 0rem;
+      .lista-white {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  #head-create {
+    width: 90%;
+    margin: 21rem 0px 24rem;
+    height: 65rem;
+    .head-publications {
+      width: 100%;
+      height: 75%;
+      background-color: #c4c4c4;
+      align-self: center;
+      border-radius: 3rem;
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 0px 4rem;
+      justify-content: center;
+      .nameUser {
+        width: 100%;
+        background: #e8e8e8;
+        height: 22%;
+        border-radius: 0rem 0 3rem 3rem;
+        align-self: flex-end;
+        margin: 0px;
+      }
+      .imgProfile {
+        width: 26%;
+        z-index: 1;
+        margin: 18rem auto -2rem;
+        height: 59%;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .createPublication {
+      display: flex;
+      width: 100%;
+      height: 53%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-radius: 2rem;
+      border: 3px solid #dbdbdb;
+      #answer {
+        width: 97%;
+        font-family: Poppins, Arial;
+        padding: 0.6rem 0rem 0.6rem 3rem;
+        font-size: 2.8rem;
+        margin: 0px;
+        height: 13%;
+        border-bottom: 1px solid #a2a2a2;
+      }
+      .newPublication {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0rem 3rem 3rem;
+        .writePublication {
+          width: 81%;
+          height: 9%;
+          font-family: Poppins, Arial;
+          font-size: 3rem;
+          padding: 1rem 0rem 13%;
+          outline: none;
+          border: 0px;
+          border-radius: 0rem 0rem 2rem 2rem;
+        }
+        #image-preview-div {
+          .imgPreview {
+            width: 20rem;
+            padding: 0rem 4rem;
+          }
+        }
+        #buttons-publicate {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .publicate {
+            width: 20rem;
+            margin: 2rem auto;
+            height: 6rem;
+            border-radius: 3rem;
+            background-color: #1fa39b;
+            border: 0px;
+            font-family: Poppins, Arial;
+            font-size: 2.8rem;
+            font-weight: 400;
+            color: white;
+          }
+          .uploadimg {
+            width: 20rem;
+            margin: 2rem auto;
+            height: 6rem;
+            border-radius: 3rem;
+            background-color: white;
+            border: 3px solid #1fa39b;
+            font-family: Poppins, Arial;
+            font-size: 2.8rem;
+            font-weight: bolder;
+            color: #1fa39b;
+          }
+        }
+      }
+    }
+  }
+
+  .publications {
+    width: 90%;
+    align-self: center;
+    border-radius: 2rem;
+    justify-content: center;
+    margin: 3rem auto 3rem;
+    .publication {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 9rem;
+      height: 67.5rem;
+      border-radius: 2rem;
+      .all-info {
+        display: flex;
+        width: 100%;
+        height: 48rem;
+        margin-bottom: 1rem;
+        flex-direction: row;
+        border-radius: 2rem;
+        border: 1px solid #606060;
+        .inf-post {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 50%;
+          height: 100%;
+          border-radius: 0rem 0rem 0rem 10rem;
+          border-right: 1px solid #606060;
+        }
+        .imgUser {
+          width: 38%;
+          background: gray;
+          height: 32%;
+          border-radius: 50%;
+          img {
+            width: 100%;
+          }
+        }
+        .buttons-post {
+          display: flex;
+          width: 100%;
+          height: 8%;
+          justify-content: space-between;
+        }
+        .txtPublicate {
+          font-size: 3rem;
+          font-family: Poppins, Arial;
+          font-weight: 500;
+          text-align: center;
+          width: 89%;
+          margin: 5rem 0rem 1rem;
+          height: 40%;
+        }
+        .likes {
+          width: 100%;
+          height: 9%;
+          display: flex;
+          justify-content: flex-start;
+        }
+        .imgPublication {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 93%;
+            height: 67%;
+            margin: 0px;
+            padding: 2rem;
+          }
+        }
+      }
+      .comments {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 23rem;
+        .commentsArea {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          order: 1;
+        }
+        .newComment {
+          display: flex;
+          order: 0;
+          height: 5.5rem;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          .writeComment {
+            width: 79%;
+            height: 67%;
+            border-radius: 2rem;
+            border: 1px solid #4c4c4c;
+            background: white;
+            padding: 0.5rem 3rem;
+            outline: none;
+            font-size: 2.5rem;
+            font-family: Poppins;
+            font-weight: 500;
+            color: #454545;
+          }
+          .pushComment {
+            font-size: 2rem;
+            font-family: Poppins;
+            font-weight: 600;
+            color: white;
+            border-radius: 3rem;
+            padding: 1rem 2rem;
+            border: 1px solid #1fa39b;
+            outline: none;
+            background-color: #1fa39b;
+          }
+        }
+      }
+    }
+  }
+}

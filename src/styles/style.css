@@ -76,7 +76,7 @@ body::before {
   height: 25rem;
 }
 #all_content div .home p {
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-weight: 200;
   line-height: 6rem;
   letter-spacing: 0.17rem;
@@ -110,7 +110,7 @@ body::before {
   border-bottom: 3px solid #aaaaaa;
   padding: 16% 1% 0%;
   height: 9rem;
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-weight: 300;
   font-size: 4rem;
   outline: none;
@@ -119,7 +119,7 @@ body::before {
 #all_content div .LogIn button {
   padding: 3% 12%;
   margin: 5rem auto;
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-size: 3.5rem;
   border-radius: 16rem;
   color: white;
@@ -140,9 +140,18 @@ body::before {
   width: 100%;
   height: 100%;
 }
+#all_content div .LogIn .logout-icon {
+  align-self: flex-end;
+  width: 7%;
+  margin: 7rem 12rem 0rem;
+}
+#all_content div .LogIn .logout-icon .logout-black {
+  width: 100%;
+  height: 100%;
+}
 #all_content div .LogIn .imgLogin {
   margin: 0px auto;
-  padding: 21% 0% 6%;
+  padding: 5% 0% 6%;
   width: 37rem;
   height: 26rem;
 }
@@ -155,8 +164,8 @@ body::before {
 }
 #all_content div .LogIn .icons {
   display: flex;
-  padding: 8% 0% 63%;
-  justify-content: center;
+  padding: 5% 0% 63%;
+  justify-content: space-evenly;
 }
 #all_content div .LogIn .icons .iconFace {
   width: 16rem;
@@ -176,10 +185,392 @@ body::before {
 #all_content div .LogIn p {
   font-size: 4rem;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-weight: 400;
   color: #606060;
   margin: 2rem 0px 0rem;
+}
+#all_content div .LogIn #registerAccount {
+  color: #454545;
+  font-weight: 500;
+  margin: 1.5rem auto;
+}
+#all_content div .LogIn #registerAccount a {
+  color: #1a936f;
+  font-weight: bold;
+  font-family: Poppins, Arial;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#div-publications {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+#div-publications .header-posts {
+  width: 100%;
+  height: 8.5%;
+  position: fixed;
+  top: 0;
+  background-color: #137054;
+  display: flex;
+  z-index: 5;
+  justify-content: space-between;
+}
+#div-publications .header-posts .logout-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#div-publications .header-posts .logout-icon .logout-white {
+  width: 7.8%;
+  height: 42%;
+  margin: 0rem 0rem 0rem 5rem;
+}
+#div-publications .header-posts .lista-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.2%;
+  height: 52%;
+  margin: 3rem 5rem 0rem 0rem;
+}
+#div-publications .header-posts .lista-icon .lista-white {
+  width: 100%;
+  height: 100%;
+}
+#div-publications #head-create {
+  width: 90%;
+  margin: 21rem 0px 24rem;
+  height: 65rem;
+}
+#div-publications #head-create .head-publications {
+  width: 100%;
+  height: 75%;
+  background-color: #c4c4c4;
+  align-self: center;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0px 4rem;
+  justify-content: center;
+}
+#div-publications #head-create .head-publications .nameUser {
+  width: 100%;
+  background: #e8e8e8;
+  height: 22%;
+  border-radius: 0rem 0 3rem 3rem;
+  align-self: flex-end;
+  margin: 0px;
+}
+#div-publications #head-create .head-publications .imgProfile {
+  width: 26%;
+  z-index: 1;
+  margin: 18rem auto -2rem;
+  height: 59%;
+  border-radius: 50%;
+}
+#div-publications #head-create .head-publications .imgProfile img {
+  width: 100%;
+  height: 100%;
+}
+#div-publications #head-create .createPublication {
+  display: flex;
+  width: 100%;
+  height: 53%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+  border: 3px solid #dbdbdb;
+}
+#div-publications #head-create .createPublication #answer {
+  width: 97%;
+  font-family: Poppins, Arial;
+  padding: 0.6rem 0rem 0.6rem 3rem;
+  font-size: 2.8rem;
+  margin: 0px;
+  height: 13%;
+  border-bottom: 1px solid #a2a2a2;
+}
+#div-publications #head-create .createPublication .newPublication {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0rem 3rem 3rem;
+}
+#div-publications #head-create .createPublication .newPublication .writePublication {
+  width: 81%;
+  height: 9%;
+  font-family: Poppins, Arial;
+  font-size: 3rem;
+  padding: 1rem 0rem 13%;
+  outline: none;
+  border: 0px;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+#div-publications #head-create .createPublication .newPublication #image-preview-div .imgPreview {
+  width: 20rem;
+  padding: 0rem 4rem;
+}
+#div-publications #head-create .createPublication .newPublication #buttons-publicate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#div-publications #head-create .createPublication .newPublication #buttons-publicate .publicate {
+  width: 20rem;
+  margin: 2rem auto;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: #1fa39b;
+  border: 0px;
+  font-family: Poppins, Arial;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: white;
+}
+#div-publications #head-create .createPublication .newPublication #buttons-publicate .uploadimg {
+  width: 20rem;
+  margin: 2rem auto;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: white;
+  border: 3px solid #1fa39b;
+  font-family: Poppins, Arial;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  color: #1fa39b;
+}
+#div-publications .publications {
+  width: 90%;
+  align-self: center;
+  border-radius: 2rem;
+  justify-content: center;
+  margin: 3rem auto 3rem;
+}
+#div-publications .publications .publication {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 9rem;
+  height: 67.5rem;
+  border-radius: 2rem;
+}
+#div-publications .publications .publication .all-info {
+  display: flex;
+  width: 100%;
+  height: 48rem;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  border-radius: 2rem;
+  border: 1px solid #606060;
+}
+#div-publications .publications .publication .all-info .inf-post {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-radius: 0rem 0rem 0rem 10rem;
+  border-right: 1px solid #606060;
+}
+#div-publications .publications .publication .all-info .imgUser {
+  width: 38%;
+  background: gray;
+  height: 32%;
+  border-radius: 50%;
+}
+#div-publications .publications .publication .all-info .imgUser img {
+  width: 100%;
+}
+#div-publications .publications .publication .all-info .buttons-post {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  justify-content: space-between;
+}
+#div-publications .publications .publication .all-info .txtPublicate {
+  font-size: 3rem;
+  font-family: Poppins, Arial;
+  font-weight: 500;
+  text-align: center;
+  width: 89%;
+  margin: 5rem 0rem 1rem;
+  height: 40%;
+}
+#div-publications .publications .publication .all-info .likes {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: flex-start;
+}
+#div-publications .publications .publication .all-info .imgPublication {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#div-publications .publications .publication .all-info .imgPublication img {
+  width: 93%;
+  height: 67%;
+  margin: 0px;
+  padding: 2rem;
+}
+#div-publications .publications .publication .comments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 23rem;
+}
+#div-publications .publications .publication .comments .commentsArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 1;
+}
+#div-publications .publications .publication .comments .newComment {
+  display: flex;
+  order: 0;
+  height: 5.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#div-publications .publications .publication .comments .newComment .writeComment {
+  width: 79%;
+  height: 67%;
+  border-radius: 2rem;
+  border: 1px solid #4c4c4c;
+  background: white;
+  padding: 0.5rem 3rem;
+  outline: none;
+  font-size: 2.5rem;
+  font-family: Poppins;
+  font-weight: 500;
+  color: #454545;
+}
+#div-publications .publications .publication .comments .newComment .pushComment {
+  font-size: 2rem;
+  font-family: Poppins;
+  font-weight: 600;
+  color: white;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  border: 1px solid #1fa39b;
+  outline: none;
+  background-color: #1fa39b;
+}
+
+#div-profile .information-user .boxPass .i-pro, #div-profile .information-user .boxEmail .i-pro, #div-profile .information-user .boxName .i-pro {
+  order: 0;
+  height: 8rem;
+  width: 78%;
+  font-size: 4rem;
+  padding: 2rem;
+  font-family: Poppins;
+  border: 0;
+  outline: none;
+  background: white;
+}
+
+#div-profile .information-user .boxPass #editPassword img, #div-profile .information-user .boxName #editName img {
+  order: 1;
+  width: 7%;
+  height: 39%;
+  padding: 3.5rem;
+}
+
+#div-profile .information-user .boxPass, #div-profile .information-user .boxName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+}
+
+#div-profile .information-user .buttons .upload, #div-profile .information-user .buttons .buttons-upload .upload {
+  width: 40%;
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  font-family: Poppins;
+  line-height: 4rem;
+  background: white;
+  color: #1fa39b;
+  border-radius: 3rem;
+  border: 4px solid #1fa39b;
+  outline: none;
+  font-weight: 600;
+}
+
+#div-profile {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#div-profile .header-profile {
+  width: 100%;
+  height: 8.5%;
+  position: fixed;
+  top: 0;
+  background-color: #137054;
+  display: flex;
+  z-index: 5;
+  justify-content: space-between;
+}
+#div-profile .header-profile .logout-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#div-profile .header-profile .logout-icon .logout-white {
+  width: 7.8%;
+  height: 42%;
+  margin: 0rem 0rem 0rem 5rem;
+}
+#div-profile .head-profile {
+  padding: 15rem 0rem;
+}
+#div-profile .information-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 73%;
+  height: 39%;
+  margin-top: 18rem;
+}
+#div-profile .information-user .buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 11rem;
+  width: 100%;
+  height: 29%;
+}
+#div-profile .information-user .buttons .buttons-upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#div-profile .information-user .buttons .upload {
+  padding: 3rem 3rem;
+  background: #1fa39b;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 3.5rem;
+  margin-top: 6rem;
 }
 
 #all_content div .SignUp .entries input {
@@ -187,8 +578,8 @@ body::before {
   border: 0px;
   border-bottom: 3px solid #aaaaaa;
   padding: 9% 1% 0%;
-  height: 9rem;
-  font-family: Poppins;
+  height: 7.5rem;
+  font-family: Poppins, Arial;
   font-weight: 300;
   font-size: 4rem;
   outline: none;
@@ -197,7 +588,7 @@ body::before {
 #all_content div .SignUp button {
   padding: 3% 12%;
   margin: 5rem auto 4rem;
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-size: 3.5rem;
   border-radius: 16rem;
   color: white;
@@ -214,9 +605,18 @@ body::before {
   width: 100%;
   height: 100%;
 }
+#all_content div .SignUp .logout-icon {
+  align-self: flex-end;
+  width: 7%;
+  margin: 7rem 12rem 0rem;
+}
+#all_content div .SignUp .logout-icon .logout-black {
+  width: 100%;
+  height: 100%;
+}
 #all_content div .SignUp .imgSignUp {
   margin: 0px auto;
-  padding: 15% 0% 4%;
+  padding: 5% 0% 4%;
   width: 37rem;
   height: 26rem;
 }
@@ -229,8 +629,8 @@ body::before {
 }
 #all_content div .SignUp .icons {
   display: flex;
-  padding: 1% 0% 63%;
-  justify-content: center;
+  padding: 3% 0% 63%;
+  justify-content: space-evenly;
 }
 #all_content div .SignUp .icons .iconFace {
   width: 16rem;
@@ -250,10 +650,59 @@ body::before {
 #all_content div .SignUp p {
   font-size: 3.5rem;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, Arial;
   font-weight: 400;
   color: #606060;
   margin: 0px;
+}
+#all_content div .SignUp #haveAccount {
+  color: #454545;
+  font-weight: 500;
+  margin: 3rem auto 0rem;
+}
+#all_content div .SignUp #haveAccount a {
+  color: #1a936f;
+  font-weight: bold;
+  font-family: Poppins, Arial;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#div-404 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+}
+#div-404 .content404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#div-404 .content404 .img404 {
+  width: 90%;
+  margin-top: 39rem;
+}
+#div-404 .content404 .txtups {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: Poppins, Arial;
+}
+#div-404 .content404 .back-publications {
+  width: 40%;
+  height: 12rem;
+  border-radius: 4rem;
+  font-size: 3.3rem;
+  font-family: Poppins, Arial;
+  background-color: #1a936f;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 0px;
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

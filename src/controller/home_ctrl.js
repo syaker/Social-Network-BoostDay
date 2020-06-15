@@ -1,4 +1,4 @@
-import { objViews } from "./obj_views.js";
+import { objViews } from "../views/obj_views.js";
 
 export default () => {
 	const viewHome = objViews.Home();

@@ -1,7 +1,10 @@
-import { objViews } from "./obj_views.js";
+import { objViews } from "../views/obj_views.js";
 
 export default () => {
 	const view404 = objViews.NotFound();
-	//Aqui falta adicionarle CSS y darle funcionalidad a los botones
+	const buttonBack = view404.querySelector('.back-publications');
+	buttonBack.addEventListener('click', () => {
+		window.history.back();
+	})
 	return view404;
 }

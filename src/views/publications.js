@@ -1,34 +1,30 @@
 //CAMBIAR CONTENIDO DE PUBLICATIONS
 export default () => {
   const viewPublications = `
-	  <header>
-	  <img class="logOut" href="#/"></img>
+	  <header class="header-posts">
+	  <a href="#/" class="signOut logout-icon"><img class="logout-white" src="../all_images/logout-white.png"></img></a>
+	  <a class="lista-icon"><img class="lista-white" src="../all_images/lista.png"></img></a>
+	  <img class=""></img>
 	  </header>
+	  <section id="head-create">
 	  <section class="head-publications">
 	  <div class="imgProfile"></div>
 	  <div class="imgCover"></div>
 	  <p class="nameUser"></p>
 	  </section>
 	  <section class="createPublication">
-	  <p>¿Que deseas compartir?</p>
+	  <p id="answer">¿Que deseas compartir?</p>
 	  <div class="newPublication">
 	  <input class="writePublication" placeholder="Escribe algo..."></input>
+	  <div id="image-preview-div"></div>
+	  <div id="buttons-publicate">
 	  <button class="publication publicate">Publicar</button>
-	  <button class="publication uploadimg">Subir imagen</button>
+	  <input type="file" class="publication uploadimg">Subir imagen</input>
+	  </div>
 	  </div>
 	  </section>
+	  </section>
 	  <section class="publications">
-	  <div class="publication">
-		  <button class="menuHamburguer"></button>
-		  <button class="private-public"></button>
-		  <div class="imgUser"></div>
-		  <div class="imgPublication"></div>
-		  <p class="txtPublicate"></p>
-		  <div class="likes">
-			  <img class="like"></img>
-			  <p type="number" class="accountant"></p>
-		  </div>
-	  </div>
 	  </section>`;
   const divHTML = document.createElement("div");
   divHTML.setAttribute("id", "div-publications")

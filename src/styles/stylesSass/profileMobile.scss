@@ -1,0 +1,131 @@
+%input-info {
+  order: 0;
+  height: 8rem;
+  width: 78%;
+  font-size: 4rem;
+  padding: 2rem;
+  font-family: Poppins;
+  border: 0;
+  outline: none;
+  background: white;
+}
+%img-info {
+  order: 1;
+  width: 7%;
+  height: 39%;
+  padding: 3.5rem;
+}
+
+%input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+}
+
+%button-upload {
+  width: 40%;
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  font-family: Poppins;
+  line-height: 4rem;
+  background: white;
+  color: #1fa39b;
+  border-radius: 3rem;
+  border: 4px solid #1fa39b;
+  outline: none;
+  font-weight: 600;
+}
+
+#div-profile {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .header-profile {
+    width: 100%;
+    height: 8.5%;
+    position: fixed;
+    top: 0;
+    background-color: #137054;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    .logout-icon {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logout-white {
+        width: 7.8%;
+        height: 42%;
+        margin: 0rem 0rem 0rem 5rem;
+      }
+    }
+  }
+  .head-profile {
+    padding: 15rem 0rem;
+  }
+  .information-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 73%;
+    height: 39%;
+    margin-top: 18rem;
+    .boxName {
+      @extend %input-box;
+      #editName {
+        img {
+          @extend %img-info;
+        }
+      }
+      .i-pro {
+        @extend %input-info;
+      }
+    }
+    .boxEmail {
+      .i-pro {
+        @extend %input-info;
+      }
+    }
+    .boxPass {
+      @extend %input-box;
+      #editPassword {
+        img {
+          @extend %img-info;
+        }
+      }
+      .i-pro {
+        @extend %input-info;
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 11rem;
+      width: 100%;
+      height: 29%;
+      .buttons-upload {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .upload {
+          @extend %button-upload;
+        }
+      }
+      .upload {
+        @extend %button-upload;
+        padding: 3rem 3rem;
+        background: #1fa39b;
+        color: white;
+        letter-spacing: 0.1rem;
+        font-size: 3.5rem;
+        margin-top: 6rem;
+      }
+    }
+  }
+}
